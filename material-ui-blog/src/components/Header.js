@@ -2,15 +2,18 @@ import { Badge, Divider, IconButton, Toolbar, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import SideDrawer from "./SideDrawer"
 import React from "react";
 
 const Header = () => {
   return (
     <>
       <Toolbar>
-        <IconButton color="inherit">
+      <SideDrawer>
+      <IconButton color="inherit">
           <MenuIcon />
         </IconButton>
+      </SideDrawer>
         <Typography variant="h6"> Blogging Website</Typography>
         <IconButton color="inherit">
           <Badge badgeContent={4} color="primary">
